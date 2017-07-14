@@ -2,12 +2,8 @@ group 'edu.pucmm'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
-apply plugin: 'application'
 
 sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-mainClassName = "edu.pucmm.Main"
 
 repositories {
     mavenCentral()
@@ -26,8 +22,4 @@ dependencies {
     //Gson para transformar los objetos a JSON.
     compile 'com.google.code.gson:gson:2.6.2'
     //compile 'org.webjars:bootstrap:3.3.6', //existe un bug que no permite varias rutas, están metiendo mano.
-}
-
-task stage {
-    dependsOn installDist
 }
